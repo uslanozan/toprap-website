@@ -1,0 +1,40 @@
+.navbar ul{
+    list-style-type: none; /* Liste başındaki noktaları kaldırır*/
+    font-family: Ancient Medium, 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    background-color: #1d1d1d;
+    overflow: hidden;
+    padding:0px ;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;  /* Eşit dağıtmasını sağlar. Bunu kullanmak için display:flex; olması lazım*/
+}
+ul li ul.s li{
+    display: block;
+}
+.sub-nav-list{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: aqua;
+    padding: 10px;
+}
+ul li a:hover{
+    background-color: #3d3d3d;
+}
+ul li:hover ul.sub-nav-list{
+    display: block;
+}
+
+.navbar a{
+    text-decoration: none; /* linkteki alt çizgileri siler*/
+    color: rgb(162, 22, 190);
+    text-align: center;
+    display: block;
+    padding: 15px;
+    
+}
+.navbar li{
+    float:left; /* Navbarı yatay hale getirir soldan başlar*/
+}
